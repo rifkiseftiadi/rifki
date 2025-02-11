@@ -1,0 +1,219 @@
+/* Resetting some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body Styles */
+  body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f0f4f8; /* Latar belakang biru muda */
+    color: #2c3e50; /* Teks gelap */
+  }
+  
+  /* Header Styles */
+  header {
+    background-color: #3498db; /* Biru cerah untuk header */
+    color: #fff;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+  
+  nav ul li {
+    margin: 0 20px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    transition: color 0.3s, transform 0.3s;
+  }
+  
+  nav ul li a:hover {
+    color: #ecf0f1; /* Warna putih terang untuk hover */
+    transform: scale(1.1);
+  }
+  
+  /* Main Content Styles */
+  main {
+    padding: 3rem 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Section Styles */
+  section {
+    margin-bottom: 3rem;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* About Me Section */
+  #about {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+  
+  .profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #2980b9; /* Biru lebih gelap untuk border */
+  }
+  
+  .profile-info h3 {
+    font-size: 2rem;
+    color: #2980b9; /* Biru gelap untuk nama */
+  }
+  
+  .profile-info p {
+    font-size: 1.1rem;
+    color: #555;
+  }
+  
+  /* Skills Section */
+  #skills ul {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+  
+  #skills li {
+    font-size: 1.1rem;
+    color: #2c3e50;
+  }
+  
+  /* Services Section */
+  #services div {
+    background-color: #ecf0f1;
+    border-left: 5px solid #3498db; /* Biru cerah untuk border kiri */
+    margin: 1.5rem 0;
+    padding: 1rem;
+  }
+  
+  #services h3 {
+    font-size: 1.5rem;
+    color: #2980b9;
+  }
+  
+  #services p {
+    font-size: 1.1rem;
+    color: #7f8c8d;
+  }
+  
+  /* Portfolio Section */
+  #portfolio div {
+    margin-bottom: 1.5rem;
+  }
+  
+  #portfolio h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #3498db; /* Biru cerah untuk judul proyek */
+  }
+  
+  #portfolio a {
+    color: #2980b9; /* Biru gelap untuk link */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s, text-decoration 0.3s;
+  }
+  
+  #portfolio a:hover {
+    color: #1abc9c; /* Warna biru kehijauan saat hover */
+    text-decoration: underline;
+  }
+  
+  /* Contact Section */
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  form input,
+  form textarea {
+    padding: 0.8rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    transition: border-color 0.3s;
+  }
+  
+  form input:focus,
+  form textarea:focus {
+    border-color: #3498db; /* Biru cerah saat fokus */
+  }
+  
+  form button {
+    padding: 1rem;
+    background-color: #3498db; /* Biru cerah untuk tombol */
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 1.1rem;
+    transition: background-color 0.3s;
+  }
+  
+  form button:hover {
+    background-color: #2980b9; /* Biru lebih gelap saat hover */
+  }
+  
+  /* Footer Styles */
+  footer {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: #2c3e50; /* Biru gelap untuk footer */
+    color: white;
+  }
+  
+  footer p {
+    font-size: 1rem;
+    color: #ecf0f1; /* Warna putih pudar untuk footer text */
+  }
+  
+  /* Responsive Design (untuk tampilan mobile) */
+  @media (max-width: 768px) {
+    nav ul {
+      flex-direction: column;
+    }
+  
+    nav ul li {
+      margin: 10px 0;
+    }
+  
+    main {
+      padding: 2rem;
+    }
+  
+    form {
+      width: 100%;
+    }
+  }
+  
